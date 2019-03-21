@@ -1,1 +1,21 @@
 // Navigation Styles here
+.navigation {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    border-bottom: 1px dashed black;
+    margin: 2% auto;
+
+    h1 {
+        width: 50%;
+    }
+
+    a {
+        text-decoration: none;
+        color: black;
+        &:hover {
+            text-decoration: underline;
+            color: teal;
+        }
+    }
+}
