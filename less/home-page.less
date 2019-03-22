@@ -17,7 +17,7 @@
     }
 
     .text {
-      margin: 2% auto 2%;
+      margin: 2% 2% 2% 0;
       border-bottom: 2px dashed @navigation-border;
       padding-bottom: 2%;
       @media @mobile {
@@ -92,31 +92,41 @@
   .content-destination {
     width: 75%;
     margin: 0 auto 30px;
+    @media @mobile {
+      width: 90%;
+    }
   }
 
     img {
       border-radius: 10px;
+      @media @mobile {
+        width: 100%
+      }
     }
 
   .content-pick {
-    padding-top: 30px;
+    padding-top: 6%;
     border-top: 2px dashed @navigation-border;
     display: flex;
     justify-content: space-between;
+    @media @mobile {
+      flex-flow: row wrap;
+      justify-content: center;
+    }
 
     .destination {
       width: 30%;
       margin-bottom: 30px;
+      @media @mobile {
+        width: 75%;
+        padding-left: 1%;
+      }
 
       .btn {
         .button(@btn-color, @btn-text);
-        width: 75%;
-        height: 18%;
-        border-radius: 15px;
-        text-align: center;
-        padding-top: 4.5%;
-        font-size: 1.8rem;
-        border: 1px solid @navigation-border;
+        @media @mobile {
+          .mobile-button(@btn-color-mobile, @btn-text);
+        }
       }
     }
   }
