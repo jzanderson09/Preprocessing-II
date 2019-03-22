@@ -2,14 +2,27 @@
 
   .header-section {
 
+  @media @mobile {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+  }
+
     img {
       border-radius: 0;
+      @media @mobile {
+        max-width: 90%;
+        align-self: center;
+      }
     }
 
     .text {
       margin: 2% auto 2%;
       border-bottom: 2px dashed gray;
       padding-bottom: 2%;
+      @media @mobile {
+        padding: 4%;
+      }
     }
   }
 
@@ -18,6 +31,10 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    @media @mobile {
+      flex-flow: row wrap;
+      align-items: center;
+    }
 
     .text-content {
       width: 48%;
@@ -73,7 +90,7 @@
         .button(@btn-color, @btn-text);
         width: 75%;
         height: 18%;
-        border-radius: 15%;
+        border-radius: 15px;
         text-align: center;
         padding-top: 4.5%;
         font-size: 1.8rem;

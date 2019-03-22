@@ -163,6 +163,7 @@ p {
   line-height: 1.5;
   font-size: 1.6rem;
   padding-bottom: 10px;
+  font-weight: bold;
 }
 img {
   max-width: 100%;
@@ -188,13 +189,12 @@ img {
   }
 }
 .navigation h1 {
-  width: 35%;
-  padding: 2% auto;
+  width: 49%;
 }
 @media (max-width: 500px) {
   .navigation h1 {
     width: 100%;
-    margin: 5% 20%;
+    margin: 5% 36%;
   }
 }
 .navigation a {
@@ -223,19 +223,43 @@ img {
 .footer p {
   font-weight: bold;
 }
+@media (max-width: 500px) {
+  .home .header-section {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+  }
+}
 .home .header-section img {
   border-radius: 0;
+}
+@media (max-width: 500px) {
+  .home .header-section img {
+    max-width: 90%;
+    align-self: center;
+  }
 }
 .home .header-section .text {
   margin: 2% auto 2%;
   border-bottom: 2px dashed gray;
   padding-bottom: 2%;
 }
+@media (max-width: 500px) {
+  .home .header-section .text {
+    padding: 4%;
+  }
+}
 .home .content-section {
   margin: 30px 0;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+}
+@media (max-width: 500px) {
+  .home .content-section {
+    flex-flow: row wrap;
+    align-items: center;
+  }
 }
 .home .content-section .text-content {
   width: 48%;
@@ -282,7 +306,7 @@ img {
   color: white;
   width: 75%;
   height: 18%;
-  border-radius: 15%;
+  border-radius: 15px;
   text-align: center;
   padding-top: 4.5%;
   font-size: 1.8rem;
