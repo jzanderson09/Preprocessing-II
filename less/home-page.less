@@ -1,6 +1,11 @@
 .home {
 
   .header-section {
+
+    img {
+      border-radius: 0;
+    }
+
     .text {
       margin: 2% auto 2%;
       border-bottom: 2px dashed gray;
@@ -47,6 +52,7 @@
   .content-destination {
     width: 75%;
     margin: 0 auto 30px;
+  }
 
     img {
       border-radius: 10px;
@@ -62,6 +68,17 @@
     .destination {
       width: 30%;
       margin-bottom: 30px;
+
+      .btn {
+        .button(@btn-color, @btn-text);
+        width: 75%;
+        height: 18%;
+        border-radius: 15%;
+        text-align: center;
+        padding-top: 4.5%;
+        font-size: 1.8rem;
+        border: 1px solid gray;
+      }
     }
   }
-}// home
+// home

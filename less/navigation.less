@@ -6,10 +6,18 @@
     border-bottom: 2px dashed gray;
     margin: 2% auto 0 auto;
     padding-bottom: 2%;
+    @media @mobile {
+        flex-flow: row wrap;
+        justify-content: space-around;
+    }
 
     h1 {
         width: 35%;
         padding: 2% auto;
+        @media @mobile {
+            width: 100%;
+            margin: 5% 20%;
+        }
     }
 
     a {
