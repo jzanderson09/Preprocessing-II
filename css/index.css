@@ -373,3 +373,11 @@ img {
     padding-bottom: 2%;
   }
 }
+.content-pick .destination .btn:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
+.content-pick .destination .btn a {
+  text-decoration: none;
+  color: white;
+}
