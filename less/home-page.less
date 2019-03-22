@@ -127,6 +127,15 @@
         @media @mobile {
           .mobile-button(@btn-color-mobile, @btn-text);
         }
+        &:hover {
+          cursor: pointer;
+          text-decoration: underline;
+        }
+        
+          a {
+            text-decoration: none;
+            color: @btn-text;
+          }
       }
     }
   }
