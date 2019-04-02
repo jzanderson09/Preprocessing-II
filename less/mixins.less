@@ -1,1 +1,21 @@
 // Mixins in here
+.button(@btn-color, @btn-text) {
+    background: @btn-color;
+    color: @btn-text;
+    width: 75%;
+    height: 18%;
+    border-radius: 15px;
+    text-align: center;
+    padding-top: 4.5%;
+    font-size: 1.8rem;
+    font-weight: bold;
+    border: 1px solid @navigation-border;
+}
+
+.mobile-button(@btn-color, @btn-text) {
+    background: @btn-color-mobile;
+    color: @btn-text;
+    width: 95%;
+    height: 27%;
+    padding-bottom: 2%;
+}

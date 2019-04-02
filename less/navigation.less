@@ -1,1 +1,33 @@
 // Navigation Styles here
+.navigation {
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+    border-bottom: 2px dashed @navigation-border;
+    margin: 2% auto 0 auto;
+    padding-bottom: 2%;
+    @media @mobile {
+        flex-flow: row wrap;
+        justify-content: space-around;
+    }
+
+    h1 {
+        width: 49%;
+        @media @mobile {
+            width: 100%;
+            margin: 5% 36%;
+        }
+    }
+
+    a {
+        font-size: 1.8rem;
+        text-decoration: none;
+        font-weight: bold;
+        color: black;
+        margin-right: 2%;
+        &:hover {
+            text-decoration: underline;
+            color: teal;
+        }
+    }
+}
